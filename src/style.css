@@ -1,182 +1,146 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-:root{
-    --light-color: #fff;
-    --dark-color:#282828;
-    --header-height: 70px;
-    --search-height:50px;
-    --border-color:#ccc;
-}
-
-
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
 
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-    background: var(--light-color);
-    overflow: hidden;
-}
-.container{
-    text-align: center;
-    height: calc(100vh - var(--header-height));
+body{
+    min-height: 100vh;
+    background-color: #ffc3ae;
+    /**background: url(/index_images/photo-1629157247277-48f870757026.avif) no-repeat;
+    background-size: cover;
+    background-position: center;**/
 }
 
-header {
-    height: var(--header-height);
-    background: var(--dark-color);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    color: var(--light-color);
-    gap: 10px;
-    padding-right: 30px;
-
-}
-header img {
-    filter: invert(1);
-}
-
-.search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: var(--search-height);
-    gap: 10px;
-    box-shadow: 0px 2px 8px 0px var(--border-color) ;
-}
-
-.search input [type="text"] {
-    
-    
-    padding: 8px 10px;
-    line-height: 1.5;
-    font-size: 1rem;
-    border: none;
-    border-left: 1px solid var(--border-color);
-    border-bottom: 1px solid transparent;
-    outline: none;
-    transition: all 200ms ease-in-out;
-    width: 60%;
-}
-
-.search input[type= "text"] :focus{
-    border-left-color: transparent;
-    border-bottom-color: var(--border-color);
-    width: 61%;
-}
-
-.btn{
-    padding: 8px 10px;
-    background: transparent;
-    border-radius: 2px;
-    user-select: none;
-    font-size: 1rem;
-    border: 1px solid #007bff;
-    cursor: pointer;
-
-}
-.btn:hover {
-    background: #007bff;
-    border-color: var(--dark-color);
-    color: var(--light-color);
-}
-
-#recipe-container{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: calc(100vh - (var(--header-height) + var(--search-height) = 20px));
-    overflow: hidden;
-    overflow-y: auto;
-
-}
-.recipe{
-    height:300px;
-    width: 300px;
-    padding: 8px;
-    box-shadow: 0px 0px 8px 2px var(--border-color);
-    margin: 20px;
-    transition: all 200ms ease-in-out;
-    border-radius: 4px 4px 0px 0px;
-}
-
-.recipe-title{
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-}
-
-.recipe-image{
-    height: 210px;
-}
-
-.recipe-image img{
-    height: 100%;
-    width:100%
-}
-
-.recipe-text{
-    height: 0px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 200ms ease-in-out;
-    background: #ccc;
-    margin-top: 20px;
-    overflow: hidden;
-    overflow-y: auto;
-    transform: scale(.8);
-
-}
-
-.recipe-text ul{
-    list-style-type: circle;
-    list-style-position: inside;
-    text-align: left;
-    padding: 5px;
-
-}
-
-.recipe-text ul > li{
-    padding: 5px;
-
-}
-
-.recipe:hover .recipe-text{
-    height: 120px;
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
-
-}
-.recipe:hover{
-    height: 420px;
-
-}
-
-::selection{
-    color: var(--light-color);
-    background: rgb(30, 105, 30);
-}
-
-#loading{
-    background: url(images/Spiiner_color.gif) no-repeat center center;
-    position: absolute;
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    z-index: 999;
+    padding: 20px 100px;
+    background: #D97E4A;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
 }
 
-.hide{
-    display: none;
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-indent: 5px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.big-card{
+    margin-top: 5%;
+}
+
+.card{
+    background-color: #E8B692;
+    width: 100%;
+    height: 250px;
+    margin-left: 25%;
+
+}
+
+
+.btn-primary{
+    background-color: grey;
+    border: black dotted;
+    border-radius: 25%;
+    margin-top: 10%;
+
+}
+.manchete{
+    font-size: 64px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-left: 33px;
+}
+
+.sub-manchete{
+    font-size: 26px;
+    margin-left: 33px;
+    
+}
+
+footer{
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px, 30px, 20px;
+}
+
+
+
+.fa-github{
+    color: black;
+    font-size: 33px;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.footerNav ul li a{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+
+    background-color: #a3a0a0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+    height: 1x;
 }
