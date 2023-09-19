@@ -9,7 +9,7 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 100%;
     background-color: #ffc3ae;
     /**background: url(/index_images/photo-1629157247277-48f870757026.avif) no-repeat;
     background-size: cover;
@@ -61,24 +61,41 @@ body{
     width: 100%;
 }
 
-.big-card{
-    margin-top: 5%;
+.first-box{
+    margin-top: 150px ;
+    margin-left: 36px;
+    
 }
 
-.card{
-    background-color: #E8B692;
-    width: 100%;
-    height: 250px;
-    margin-left: 25%;
 
+
+.card{
+    margin-top: 25px;
+    background-color: #E8B692;
+    width: 350;
+    height: 150px;
+    margin-left: 25%;
+    text-align: center;
+    text-decoration-line: underline;
+    padding: 25px;
 }
 
 
 .btn-primary{
     background-color: grey;
-    border: black dotted;
+    border: black solid;
     border-radius: 25%;
-    margin-top: 10%;
+    margin-top: 30px;
+    
+
+}
+
+.btn-primary:hover{
+    background-color: rgba(204, 189, 203, 0.37);
+    border: black solid;
+    border-radius: 25%;
+    margin-top: 30px;
+    
 
 }
 .manchete{
@@ -96,17 +113,26 @@ body{
 
 footer{
     background-color: gray;
-    position: fixed;
+    position:sticky;
     width: 100%;
-    margin-top: 5%;
+    height: 70%;
+    margin-top: 100px;
 }
 
 .footerContainer{
     width: 100%;
-    padding: 70px, 30px, 20px;
+
 }
 
+.footerContainer-test{
+    width: 100%;
+    margin-top: 270px;
 
+}
+
+.construction{
+    margin-top: 100px;;
+}
 
 .fa-github{
     color: black;
@@ -143,4 +169,8 @@ footer{
 .footerBottom p{
     color: white;
     height: 1x;
+}
+
+.img-construction{
+    margin-top: 85px;;
 }

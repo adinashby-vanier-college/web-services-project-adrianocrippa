@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body {
+    min-height: 100%;
+    background-color: #ffc3ae;
+    
+}
+.container h1{
+    margin-top: 100px;;
+}
+
+.container{
+    height: calc(100vh - var(--header-height));
+    font-size: 20px;
+    margin-left: 40px;
+    
+    
+}
+
+.git-btn {
+    background-color: rgb(228, 193, 193);
+    border: black ;
+    border-radius: 25%;
+    margin-top: 30px;
+    color: #000;
+    justify-content: center;
+}
+
+.card-photos{
+    margin-top: 45px;
+    display:flex;
+    justify-content: space-between;
+    color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 3px solid #000;
+    padding: 25px;
+}
+
+
+/*.diana_photo img{
+    height: 150px;
+    width: 150px;
+    margin-right: 200px;
+    position: relative;
+    
+
+}
+.adriano_photo img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    width: 10%;
+    top: 200px;
+
+}*/
+
