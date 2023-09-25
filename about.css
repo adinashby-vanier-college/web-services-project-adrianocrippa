@@ -65,10 +65,7 @@ body{
     text-align: center;
     height: calc(100vh - var(--header-height));
     font-size: 20px;
-    margin-left: 400px;
-    margin-right: 200px;
-    
-    
+   
 }
 .diana_photo img{
     height: 150px;
@@ -83,12 +80,13 @@ body{
     height: 150px;
     width: 150px;
     position: absolute;
-    margin-top: -140px;
+    margin-top: -150px;
     display: inline;
 }
 .git-diana {
     color: #000;
     margin-right: 400px;
+    margin-top: -150px;
     
 }
 .git-adriano {
