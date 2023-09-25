@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 
 }
 
@@ -62,7 +62,7 @@ body{
 }
 
 .first-box{
-    margin-top: 150px ;
+    margin-top: 300px ;
     margin-left: 36px;
     
 }
@@ -71,9 +71,9 @@ body{
 
 .card{
     margin-top: 25px;
-    background-color: #E8B692;
+    background-color: #D97E4A;
     width: 350;
-    height: 150px;
+    height: 200px;
     margin-left: 25%;
     text-align: center;
     text-decoration-line: underline;
@@ -83,9 +83,10 @@ body{
 
 .btn-primary{
     background-color: grey;
-    border: black solid;
+    border: rgb(219, 98, 27);
     border-radius: 25%;
-    margin-top: 30px;
+    margin-top: 80px;
+    color: black;
     
 
 }
@@ -94,7 +95,7 @@ body{
     background-color: rgba(204, 189, 203, 0.37);
     border: black solid;
     border-radius: 25%;
-    margin-top: 30px;
+    margin-top: 50px;
     
 
 }
@@ -106,17 +107,21 @@ body{
 }
 
 .sub-manchete{
-    font-size: 26px;
-    margin-left: 33px;
+    font-size: 48px;
+    margin-right: 50px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 100px;
     
 }
 
 footer{
     background-color: gray;
-    position:sticky;
+    font-family: 'Nunito', sans-serif;
     width: 100%;
     height: 70%;
-    margin-top: 100px;
+    margin-top: 320px;
 }
 
 .footerContainer{
@@ -126,7 +131,6 @@ footer{
 
 .footerContainer-test{
     width: 100%;
-    margin-top: 270px;
 
 }
 
@@ -137,26 +141,6 @@ footer{
 .fa-github{
     color: black;
     font-size: 33px;
-}
-
-.footerNav ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-
-}
-
-.footerNav ul li a{
-    color: black;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-.footerNav ul li a:hover{
-    opacity: 1;
 }
 
 .footerBottom{

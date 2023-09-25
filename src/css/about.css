@@ -1,66 +1,150 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-* { 
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   
     font-family: 'Nunito', sans-serif;
 
 }
 
-body {
+body{
+    
     min-height: 100%;
     background-color: #ffc3ae;
-    
 }
-.container h1{
-    margin-top: 100px;;
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #D97E4A;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
 }
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-indent: 5px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
 
 .container{
+    margin-top: 150px;
+    text-align: center;
     height: calc(100vh - var(--header-height));
     font-size: 20px;
-    margin-left: 40px;
+    margin-left: 400px;
+    margin-right: 200px;
     
     
 }
-
-.git-btn {
-    background-color: rgb(228, 193, 193);
-    border: black ;
-    border-radius: 25%;
-    margin-top: 30px;
-    color: #000;
-    justify-content: center;
-}
-
-.card-photos{
-    margin-top: 45px;
-    display:flex;
-    justify-content: space-between;
-    color: black;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: 3px solid #000;
-    padding: 25px;
-}
-
-
-/*.diana_photo img{
+.diana_photo img{
     height: 150px;
     width: 150px;
-    margin-right: 200px;
+    margin-right: 400px;
     position: relative;
-    
+    margin-top: 80px;
+    display: inline;
 
 }
 .adriano_photo img{
     height: 150px;
     width: 150px;
     position: absolute;
-    width: 10%;
-    top: 200px;
+    margin-top: -140px;
+    display: inline;
+}
+.git-diana {
+    color: #000;
+    margin-right: 400px;
+    
+}
+.git-adriano {
+    color: black;
+    margin-left: 170px;
+    margin-top: -200px;
+    
+    
+}
+.container-text{
+    margin-top: 50px;
+}
 
-}*/
+footer{
+    background-color: gray;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    height: 70%;
+    margin-top: 150px;
+}
 
+.footerContainer{
+    width: 100%;
+
+}
+
+.footerContainer-test{
+    width: 100%;
+
+}
+
+.construction{
+    margin-top: 100px;;
+}
+
+.fa-github{
+    color: black;
+    font-size: 33px;
+}
+
+.footerBottom{
+
+    background-color: #a3a0a0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+    height: 1x;
+}
+
+.img-construction{
+    margin-top: 85px;
+}
+
+.logo img{
+    width: 250px;
+}
