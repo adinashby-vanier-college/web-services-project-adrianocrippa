@@ -21,9 +21,9 @@ const server = http.createServer((req, res)=>{
             res.statusCode = 200;
             path += "disclaimer.html";
             break;
-        case "/source":
+        case "/sources":
             res.statusCode = 200;
-            path += "source.html";
+            path += "sources.html";
             break;
         default:
             res.statusCode = 404;

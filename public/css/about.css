@@ -1,19 +1,20 @@
+
+/* Import Nunito font */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+/* Universal reset and set font-family */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Nunito', sans-serif;
-
 }
 
-body{
+body {
     min-height: 100%;
     background-color: #ffc3ae;
-
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +23,7 @@ body{
     background: #D97E4A;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center; /* Use align-items for vertical alignment */
     z-index: 100;
 }
 
@@ -34,7 +35,7 @@ body{
     text-indent: 5px;
 }
 
-.navbar a{
+.navbar a {
     position: relative;
     font-size: 18px;
     color: #fff;
@@ -43,7 +44,7 @@ body{
     margin-left: 40px;
 }
 
-.navbar a::before{
+.navbar a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -54,65 +55,91 @@ body{
     transition: .3s;
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
     width: 100%;
 }
-.container h1{
-    margin-top: 200px;
-}
 
-.container{
+.container {
+    margin-top: 150px;
     text-align: center;
+    /* Use calc for height calculation */
     height: calc(100vh - var(--header-height));
     font-size: 20px;
-    margin-left: 400px;
-    margin-right: 200px;
-    
-    
 }
-footer{
+
+.diana_photo img {
+    height: 150px;
+    width: 150px;
+    margin-right: 400px;
+    position: relative;
+    margin-top: 80px;
+    display: inline;
+}
+
+.adriano_photo img {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin-top: -150px;
+    display: inline;
+}
+
+.git-diana {
+    color: #000;
+    margin-right: 400px;
+    margin-top: -150px;
+}
+
+.git-adriano {
+    color: black;
+    margin-left: 170px;
+    margin-top: -200px;
+}
+
+.container-text {
+    margin-top: 50px;
+}
+
+footer {
     background-color: gray;
     font-family: 'Nunito', sans-serif;
     width: 100%;
     height: 70%;
-    margin-top: 680px;
+    margin-top: 150px;
 }
 
-.footerContainer{
+.footerContainer {
     width: 100%;
-
 }
 
-.footerContainer-test{
+.footerContainer-test {
     width: 100%;
-
 }
 
-.construction{
-    margin-top: 100px;;
+.construction {
+    margin-top: 100px; /* Remove extra semicolon */
 }
 
-.fa-github{
+.fa-github {
     color: black;
     font-size: 33px;
 }
 
-.footerBottom{
-
+.footerBottom {
     background-color: #a3a0a0;
     padding: 20px;
     text-align: center;
 }
 
-.footerBottom p{
+.footerBottom p {
     color: white;
-    height: 1x;
+    /* Remove height: 1x; as it's unnecessary */
 }
 
-.img-construction{
-    margin-top: 85px;;
+.img-construction {
+    margin-top: 85px; /* Remove extra semicolon */
 }
 
-.logo img{
+.logo img {
     width: 250px;
 }
