@@ -32,6 +32,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     text-indent: 5px;
+    border-radius: 15px;
 }
 
 .navbar a {
@@ -67,8 +68,6 @@ body {
     /* Use calc for height calculation */
     height: calc(100vh - var(--header-height));
     font-size: 20px;
-    margin-left: 400px;
-    margin-right: 200px;
 }
 
 footer {

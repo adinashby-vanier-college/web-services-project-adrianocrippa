@@ -61,39 +61,29 @@ body {
 
 .container {
     margin-top: 150px;
-    text-align: center;
+    text-align: justify;
     /* Use calc for height calculation */
     height: calc(100vh - var(--header-height));
     font-size: 20px;
 }
 
-.diana_photo img {
-    height: 150px;
-    width: 150px;
-    margin-right: 400px;
-    position: relative;
-    margin-top: 80px;
-    display: inline;
+.photos{
+    display: inline-table;
 }
 
-.adriano_photo img {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    margin-top: -150px;
-    display: inline;
+.photos img {
+    height: 205px;
+    
 }
+
 
 .git-diana {
     color: #000;
-    margin-right: 400px;
-    margin-top: -150px;
 }
 
 .git-adriano {
     color: black;
-    margin-left: 170px;
-    margin-top: -200px;
+    
 }
 
 .container-text {

@@ -5,11 +5,18 @@
  */
 
 const express = require('express');
+const path = require("path");
+
 
 //initialize express app
 const app = express();
 
-app.set("view-engine", "ejs");
+
+app.set("views", path.join(__dirname, "public", "views"));
+app.set("view engine", "ejs");
+app.use(express.static('public'));
+
+
 
 
 
@@ -22,36 +29,36 @@ app.set("view-engine", "ejs");
 //app.use(express.static('public'));
 
 
-app.get('/',(req,res) => {
-    
-    //render, assistir aulq
-    res.render("/public/views/index.ejs");
+app.get('/', (req, res) => {
+    res.render("index.ejs");
 });
 
-app.get('/about',(req,res) => {
-    res.render("/public/views/about.ejs");
+app.get('/about', (req, res) => {
+    res.render("about.ejs");
 });
+
 
 app.get('/sources',(req,res) => {
-    res.render("/public/views/sources.ejs");
+    res.render("sources.ejs");
 })
 
 app.get('/disclaimer',(req,res) => {
-    res.render("/public/views/disclaimer.ejs");
+    res.render("disclaimer.ejs");
 })
 
 app.get('/recipes',(req,res) => {
-    res.render("/public/views/recipe_test.ejs");
+    res.render("recipe_test.ejs");
 })
 
 app.get('/nutrition',(req,res) => {
-    res.render("/public/views/nutrition_test.ejs");
+    res.render("nutrition_test.ejs");
 })
 
 //use means anything else....
-app.use((req, res) =>{
-    res.status(404).sendFile('/public/views/404.html', {root: __dirname});
-})
+app.use((req, res) => {
+    res.status(404).sendFile('public/views/404.html', { root: __dirname });
+});
+
 
 app.listen(3000, () => {
     console.log("CONNEXION ESTABILSHED . . .")
