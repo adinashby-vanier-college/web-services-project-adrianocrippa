@@ -11,7 +11,7 @@ btnFind.addEventListener("click", ()=>loadRecipes(txtSearch.value));
 txtSearch.addEventListener("keyup", (e) => {
     const inputValue = txtSearch.value;
     if(e.keyCode ===13){
-        loadRecipes(inputVal);
+        loadRecipes(inputValue);
     }
 } );
 
@@ -25,7 +25,7 @@ const setScrollPosition = () => {
 
 function loadRecipes(type = "paneer"){
     
-    //console.log("enntrou no loadREcipes");
+    
     const url = baseUrl + `&q=${type}`;
     fetch (url)
         .then((res) => res.json())
@@ -36,13 +36,15 @@ function loadRecipes(type = "paneer"){
         .finally(() => setScrollPosition());
 }
 
-loadRecipes();
+
 
 const getRecipeStepStr = (ingredientLines = []) =>{
-    let str = "";
+    let str = '<div style="margin-bottom:40px">';
+    
     for (var step of ingredientLines){
-        str = str + `<li>${step}</li>`;
+        str = str + `<ul>${step}</ul>`;
     }
+    str += ` </div>`
     return str;
 
 };
