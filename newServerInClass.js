@@ -50,7 +50,7 @@ app.get('/recipe_result',(req,res) => {
     res.render("recipe_result.ejs");
 })
 
-app.get('/nutrition',(req,res) => {
+app.get('/nutrition_test',(req,res) => {
     res.render("nutrition_test.ejs");
 })
 
