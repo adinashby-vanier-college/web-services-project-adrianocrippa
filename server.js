@@ -1,3 +1,21 @@
+//THIS WAS AN EXAMPLE DURING CLASS...
+/**
+ * 
+ * 
+ * 
+ */
+
+
+//NOT RELATED TO THE PROJECT.
+
+/**
+ * 
+ * 
+ * 
+ * 
+ */
+//VIEW ONLY, DONT LINK
+
 const http = require("http");
 const fs = require("fs");
 
