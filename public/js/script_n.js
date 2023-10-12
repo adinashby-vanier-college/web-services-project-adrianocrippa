@@ -34,6 +34,7 @@ function fetchNutrition (){
 
 btnFind.addEventListener("click", ()=>fetchNutrition());
 
+
 const renderNutrion = (data = []) => {
     nutritionContainer.innerHTML ="";
     let fragments =[];
@@ -41,14 +42,12 @@ const renderNutrion = (data = []) => {
         Object.keys(data.totalDaily).forEach(key => {
             let obj = data.totalDaily[key];
 
-            fragments.push(`<dt>${obj.label}</dt><dd>${obj.quantity}${obj.unit}</dd>`);
+            fragments.push(`<b>${obj.label}</b>${"        "}${parseFloat (obj.quantity).toFixed(1)}${obj.unit}<br>`);
         });
             
-            let html = `<dl>
-            <dt>Calories</dt>
-            <dd>${data.calories}</dd>
-            ${fragments.join('')}
-            </dl>`;
+            let html = `
+             <b>CALORIES</b> ${data.calories}<br>${fragments.join('')}
+            `;
 
     nutritionContainer.innerHTML = html;
  
