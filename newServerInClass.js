@@ -60,7 +60,7 @@ app.use((req, res) => {
 });
 
 
-app.listen(3002, () => {
+app.listen(3000, () => {
     console.log("CONNEXION ESTABILSHED . . .")
-    console.log("Current Port : 3002 . . .")
+    console.log("Current Port : 3000 . . .")
 });
