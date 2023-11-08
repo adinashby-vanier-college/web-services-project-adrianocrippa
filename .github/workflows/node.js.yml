@@ -25,5 +25,5 @@ jobs:
         npm install
       
     - run: |
-    - run: pm2 start web-services-project-adrianocrippa --name=ServerAPI
+    - run: pm2 restart web-services-project-adrianocrippa --name=ServerAPI
     #- run: pm2 restart ServerAPI
