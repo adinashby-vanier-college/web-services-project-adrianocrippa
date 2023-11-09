@@ -24,4 +24,4 @@ jobs:
         npm install
         # npm run build
    # - run: pm2 start ./newServerInClass.js --name=ServerAPI 
-    - run: pm restart ServerAPI
+    - run: pm2 restart ServerAPI
