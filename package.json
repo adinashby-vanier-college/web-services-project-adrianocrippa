@@ -1,0 +1,20 @@
+{
+  "name": "web-services-project-adrianocrippa",
+  "version": "1.0.0",
+  "description": "This template repository is the starter project for Web Services project. Written in HTML/CSS/JavaScript/React.js/Node.js/Express.js.",
+  "main": "newServerInClass.js",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "server.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node newServerInClass.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

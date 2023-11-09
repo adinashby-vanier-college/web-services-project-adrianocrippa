@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script_n.js" defer></script>
+  
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--fonts awesp,ex-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" 
+   referrerpolicy="no-referrer" />
+
+   <style>
+    /* Import Nunito font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Reset styles for all elements and set font-family */
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Nunito', sans-serif;
+}
+
+body {
+   min-height: 100%;
+   background-color: #ffc3ae;
+}
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 100px;
+   background: #D97E4A;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; /* Use align-items for vertical alignment */
+   z-index: 100;
+}
+
+.logo {
+   font-size: 32px;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 700;
+   text-indent: 5px;
+}
+
+.navbar a {
+   position: relative;
+   font-size: 18px;
+   color: #fff;
+   font-weight: 500;
+   text-decoration: none;
+   margin-left: 40px;
+}
+
+.navbar a::before {
+   content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background: #fff;
+   transition: .3s;
+}
+
+.navbar a:hover::before {
+   width: 100%;
+}
+
+.container h1 {
+   margin-top: 200px; /* Adjusted margin-top */
+}
+
+.container {
+   text-align: center;
+   /* Use calc for height calculation */
+   height: calc(100vh - var(--header-height));
+   font-size: 20px;
+   margin-left: 200px;
+   margin-right: 200px;
+   margin-top: 200px;
+   
+}
+
+footer {
+   background-color: gray;
+   font-family: 'Nunito', sans-serif;
+   width: 100%;
+   height: 70%;
+   margin-top: 680px; /* Adjusted margin-top */
+}
+
+.footerContainer {
+   width: 100%;
+}
+
+.footerContainer-test {
+   width: 100%;
+}
+
+.construction {
+   margin-top: 100px; /* Remove extra semicolon */
+}
+
+.fa-github {
+   color: black;
+   font-size: 33px;
+}
+
+.footerBottom {
+   background-color: #a3a0a0;
+   padding: 20px;
+   text-align: center;
+}
+
+.footerBottom p {
+   color: white;
+   /* Remove height: 1x; as it's unnecessary */
+}
+
+.img-construction {
+   margin-top: 85px; /* Remove extra semicolon */
+}
+
+.logo img {
+   width: 250px;
+}
+.btn{
+ width: 90px;
+ height: 40px;
+ background: #D97E4A;
+ font-size: 18pt;
+ 
+}
+
+
+   </style>
+
+</head>
+<body>
+    <div class="header">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="logo"></a>
+    </div>
+
+        <nav class="navbar">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="disclaimer">Disclaimer</a>
+          <a href="/sources">Sources</a>
+        </nav>
+    </div>
+    <section class="container ">
+      <div id="loading"></div>
+    <div class="search">
+      <input id="txtSearch" type="text" placeholder="Search Ingredient" size="30" style="height: 60px; font-size: 16pt;"/>
+      <button class="btn">Submit</button>
+    </div>
+    <div id="nutrition-container">
+    </div>
+  </section>
+        
+    <!-- </section> 
+    <footer>
+        
+           
+      <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by  Adriano and Diana</p>
+      </div>
+      
+      </footer> -->
+</body>
+</htm

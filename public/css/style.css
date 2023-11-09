@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add this line for better box-sizing behavior */
+}
+
+body {
+    min-height: 100%;
+    background-color: #ffc3ae;
+    /* background: url(/index_images/photo-1629157247277-48f870757026.avif) no-repeat;
+    background-size: cover;
+    background-position: center; */
+    font-family: 'Nunito', sans-serif; /* Apply Nunito font to the entire page */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #D97E4A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Use align-items for vertical alignment */
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    /* text-indent: 5px; */ /* Removed text-indent */
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.first-box {
+    margin-top: 300px;
+    margin-left: 36px;
+}
+
+.card {
+    margin-top: 25px;
+    background-color: #D97E4A;
+    width: 350px; /* Specify units for width (e.g., px) */
+    height: 200px;
+    margin-left: 25%;
+    text-align: center;
+    /* text-decoration-line: underline; */ /* Removed text-decoration-line */
+    padding: 25px;
+}
+
+.btn-primary {
+    background-color: grey;
+    border: 1px solid rgb(219, 98, 27); /* Specify border with "solid" style */
+    border-radius: 25px; /* Specify units for border-radius */
+    color: black;
+}
+
+.sub-manchete {
+    font-size: 48px;
+    margin-right: 50px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: gray;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    height: 70%;
+    margin-top: 320px;
+}
+
+.footerContainer {
+    width: 100%;
+}
+
+.footerContainer-test {
+    width: 100%;
+}
+
+.construction {
+    margin-top: 100px; /* Remove extra semicolon */
+}
+
+.fa-github {
+    color: black;
+    font-size: 33px;
+}
+
+.footerBottom {
+    background-color: #a3a0a0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    /* height: 1x; */ /* This line seems unnecessary */
+}
+
+.img-construction {
+    margin-top: 85px; /* Remove extra semicolon */
+}
+
+.logo img {
+    max-width: 250px; /* Use max-width to ensure the image scales proportionally */
+}
