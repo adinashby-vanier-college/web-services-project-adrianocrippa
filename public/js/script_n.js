@@ -13,7 +13,6 @@ const toggleLoad = (element, isShow) => {
 };
 
 function fetchNutrition() {
-  //let title = titleInput.value;
   let ingr = txtSearch.value.split("\n");
 
   return fetch(
@@ -24,8 +23,7 @@ function fetchNutrition() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ingr }),
-      //body: JSON.stringify({title, ingr})
+      body: JSON.stringify({ ingr })
     }
   )
     .then((response) => response.json())
@@ -34,7 +32,6 @@ function fetchNutrition() {
       toggleLoad(loadingEle, true);
     })
     .catch((error) => toggleLoad(loadingEle, false));
-  //.finally(() => setScrollPosition());
 }
 
 btnFind.addEventListener("click", () => fetchNutrition());
@@ -61,15 +58,20 @@ const renderNutrion = (data = []) => {
 
   let calorieMessage = "";
 
-  if (data.calories > 1000) {
-    calorieMessage= `<b style="color:red; font-size:30px">Attention</b> ingredient with high caloric value, not healthy <br>`;
-  } else {
-    calorieMessage= `<b style="color:green; font-size:30px">Healthy </b>ingredient <br>`;
-  }
-
+  calorieMessage = GetAnalyzeCaloriesMesssage(data);
   let html = `
           ${calorieMessage}<b>CALORIES</b> ${data.calories}<br>  ${fragments.join("")}
             `;
 
   nutritionContainer.innerHTML = html;
 };
+
+
+function GetAnalyzeCaloriesMesssage(data)
+{
+  if (data.calories > 1000) {
+    return `<b style="color:red; font-size:30px">Attention</b> ingredient with high caloric value, not healthy <br>`;
+  } else {
+    return `<b style="color:green; font-size:30px">Healthy </b>ingredient <br>`;
+  }
+}
